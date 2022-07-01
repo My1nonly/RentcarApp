@@ -1,23 +1,26 @@
-@extends('layouts.app')
-
+@extends('layouts.rentcar')
+@section('title','Home')
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Dashboard') }}</div>
-
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-
-                    {{ __('You are logged in!') }}
-                </div>
-            </div>
+<!-- Banners -->
+<section id="banner" class="banner-section">
+  <div class="container">
+    <div class="div_zindex">
+      <div class="row">
+        <div class="col-md-5 col-md-push-7">
+          <div class="banner_content">
+            <h1>Find the right car for you.</h1>
+            <p>We have more than a thousand cars for you to choose. </p>
+            <a href="#" class="btn">Read More <span class="angle_arrow"><i class="fa fa-angle-right" aria-hidden="true"></i></span></a> </div>
         </div>
+      </div>
     </div>
-</div>
+  </div>
+</section>
+<!-- /Banners --> 
+
 @endsection
+
+
+
+
+
